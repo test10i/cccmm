@@ -36,7 +36,7 @@ def private_panel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
         ],
         [
             InlineKeyboardButton(
-                text="ʜᴇʟᴩ", callback_data="settings_back_helper"
+                text="- Help .", callback_data="settings_back_helper"
             )
         ],
         [
@@ -49,7 +49,7 @@ def private_panel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
         ],
         [
             InlineKeyboardButton(
-                text="- Dev Source .", url=config.UPSTREAM_REPO
+                text="- Dev Source .", url=config.@P_T_I 
             )
         ],
      ]
