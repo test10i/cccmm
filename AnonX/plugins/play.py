@@ -6,8 +6,7 @@ from pyrogram import filters
 from pyrogram.types import (InlineKeyboardMarkup, InlineKeyboardButton, InputMediaPhoto,
                             Message)
 from pytgcalls.exceptions import NoActiveGroupCall
-
-
+form strings.filters import command
 import config
 from config import BANNED_USERS, lyrical
 from strings import get_command
