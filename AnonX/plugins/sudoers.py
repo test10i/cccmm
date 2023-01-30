@@ -7,7 +7,7 @@ from AnonX import app
 from AnonX.misc import SUDOERS
 from AnonX.utils.database import add_sudo, remove_sudo
 from AnonX.utils.decorators.language import language
-
+from strings.filters import command
 # Command
 ADDSUDO_COMMAND = get_command("ADDSUDO_COMMAND")
 DELSUDO_COMMAND = get_command("DELSUDO_COMMAND")
@@ -15,7 +15,7 @@ SUDOUSERS_COMMAND = get_command("SUDOUSERS_COMMAND")
 
 
 @app.on_message(
-    filters.command(ADDSUDO_COMMAND) & filters.user(OWNER_ID)
+    command(ADDSUDO_COMMAND) & filters.user(OWNER_ID)
 )
 @language
 async def useradd(client, message: Message, _):
