@@ -8,13 +8,13 @@ from AnonX.utils.database import (get_playmode, get_playtype,
                                        is_nonadmin_chat)
 from AnonX.utils.decorators import language
 from AnonX.utils.inline.settings import playmode_users_markup
-
+from strings.filters import command
 ### Commands
 PLAYMODE_COMMAND = get_command("PLAYMODE_COMMAND")
 
 
 @app.on_message(
-    filters.command(PLAYMODE_COMMAND)
+    command(PLAYMODE_COMMAND)
     & filters.group
     & ~filters.edited
     & ~BANNED_USERS
