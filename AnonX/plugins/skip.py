@@ -17,10 +17,10 @@ from AnonX.utils.thumbnails import gen_thumb
 
 # Commands
 SKIP_COMMAND = get_command("SKIP_COMMAND")
-
+from strings.filters import command
 
 @app.on_message(
-    filters.command(SKIP_COMMAND)
+    command(SKIP_COMMAND)
     & filters.group
     & ~filters.edited
     & ~BANNED_USERS
