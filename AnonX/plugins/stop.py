@@ -11,10 +11,10 @@ from AnonX.utils.inline.play import close_keyboard
 
 # Commands
 STOP_COMMAND = get_command("STOP_COMMAND")
-
+from strings.filters import command
 
 @app.on_message(
-    filters.command(STOP_COMMAND)
+    command(STOP_COMMAND)
     & filters.group
     & ~filters.edited
     & ~BANNED_USERS
