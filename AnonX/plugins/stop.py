@@ -8,10 +8,10 @@ from AnonX.core.call import Anon
 from AnonX.utils.database import set_loop
 from AnonX.utils.decorators import AdminRightsCheck
 from AnonX.utils.inline.play import close_keyboard
-
+from strings.filters import command
 # Commands
 STOP_COMMAND = get_command("STOP_COMMAND")
-from strings.filters import command
+
 
 @app.on_message(
     command(STOP_COMMAND)
