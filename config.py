@@ -26,7 +26,7 @@ UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
 GIT_TOKEN = getenv("GIT_TOKEN", None)
 
 SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/FallenAssociation")
-SUPPORT_GROUP = getenv("SUPPORT_GROUP", "https://t.me/Y_J_2")
+SUPPORT_GROUP = getenv("SUPPORT_GROUP", "https://t.me/DEV_MIX")
 
 SUPPORT_HEHE = SUPPORT_GROUP.split("me/")[1]
 
@@ -76,7 +76,7 @@ clean = {}
 autoclean = []
 
 
-START_IMG_URL = getenv("START_IMG_URL", "https://te.legra.ph/file/768bf5e360fc6467dc9f0.jpg")
+START_IMG_URL = getenv("START_IMG_URL", "https://telegra.ph/file/1068724d97569bb1a4a35.jpg")
 
 PING_IMG_URL = getenv(
     "PING_IMG_URL",
@@ -135,4 +135,4 @@ if PING_IMG_URL:
 if START_IMG_URL:
     if START_IMG_URL != "assets/Ping.jpeg":
         if not re.match("(?:http|https)://", START_IMG_URL):
-            START_IMG_URL = "https://te.legra.ph/file/56d1760224589ee370186.jpg"
+            START_IMG_URL = "https://telegra.ph/file/1068724d97569bb1a4a35.jpg"
