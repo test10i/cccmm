@@ -19,16 +19,16 @@ async def khalid(client: Client, message: Message):
     await message.reply_photo(
         photo=f"https://telegra.ph/file/1068724d97569bb1a4a35.jpg",
         caption=f"""
-[- Welcome to Source M I X .](https://t.me/DEV_MIX)
+[ - 𝗪𝗲𝗹𝗰𝗼𝗺𝗲 𝘁𝗼 𝗦𝗼𝘂𝗿𝗰𝗲 𝗠 𝗜 𝗫 . ](https://t.me/DEV_MIX)
 """,
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        ". Dev Source .", url=f"https://t.me/P_T_I"),
+                        ". 𝗗𝗲𝘃 𝗦𝗼𝘂𝗿𝗰𝗲 .", url=f"https://t.me/P_T_I"),
                 ],[
                     InlineKeyboardButton(
-                        ". Dev Source .", url=f"https://t.me/DEV_MIX"),
+                        ". 𝗦𝗼𝘂𝗿𝗰𝗲 𝗖𝗵𝗮𝗻𝗻𝗲𝗹 .", url=f"https://t.me/DEV_MIX"),
                 ],
             ]
         ),
