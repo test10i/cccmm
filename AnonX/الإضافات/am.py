@@ -10,7 +10,7 @@ from pyrogram.types import (InlineKeyboardButton,CallbackQuery,
 
 from AnonX import (Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app)
 
-AM_COMMAND = get_command["AM_COMMAND"] 
+'AM_COMMAND' = get_command["AM_COMMAND"] 
 
 
 @app.on_message(
