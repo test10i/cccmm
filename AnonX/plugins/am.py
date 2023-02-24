@@ -14,7 +14,7 @@ AM_COMMAND = get_command("AM_COMMAND")
 
 
 @app.on_message(
-    command(AM_COMMAND)
+    command("AM_COMMAND")
     & filters.group
     & ~filters.edited
     & ~BANNED_USERS
