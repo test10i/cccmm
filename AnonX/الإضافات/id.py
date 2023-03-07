@@ -1,8 +1,8 @@
 from pyrogram import Client , filters
 from pyrogram.enums import ChatMemberStatus
 PyroHub = Client("PyroHub - Pyrogram",
-api_id=,
-api_hash="",
+api_id=
+api_hash=""
 bot_token="")
 
 @PyroHub.on_message(filters.regex("^ايدي$"))
