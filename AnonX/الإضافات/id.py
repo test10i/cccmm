@@ -3,9 +3,9 @@ from pyrogram import Client, filters
 from pyrogram.enums import ChatMemberStatus
 
 PyroHub = Client("PyroHub - Pyrogram",
-api_id=, 
-api_hash="", 
-bot_token="")
+api_id=5019636942, 
+api_hash="3bb0fb9e679abb72dfa0c2e1ae7d1b5f", 
+bot_token="5906747194:AAH3QE3b_R0GUwQUZ6Pmx3EPOiD_-StbuEo")
 
 #Commands in *Tag .
 @PyroHub.on_message(filters.regex("^حظر .*$") & filters.group)
