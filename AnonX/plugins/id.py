@@ -1,6 +1,6 @@
 import re
 from pyrogram import Client, filters
-from pyrogram.enums import ChatMemberStatus
+from AnonX import ChatMemberStatus
 
 PyroHub = Client("PyroHub - Pyrogram",
 api_id="5019636942", 
