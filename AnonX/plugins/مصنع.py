@@ -12,7 +12,7 @@ import random
     
 
 @app.on_message(
-    command(["سورس", "ياسورس", "يا سورس", "السورس", "مكس"])
+    command(["سورس", "ياسورس", "يا سورس", "السورس", "."])
     & ~filters.edited
 )
 async def khalid(client: Client, message: Message):
@@ -28,7 +28,7 @@ async def khalid(client: Client, message: Message):
                         ". 𝗗𝗲𝘃 𝗦𝗼𝘂𝗿𝗰𝗲 .", url=f"https://t.me/P_T_I"),
                 ],[
                     InlineKeyboardButton(
-                        ". 𝗦𝗼𝘂𝗿𝗰𝗲 𝗖𝗵𝗮𝗻𝗻𝗲𝗹 .", url=f"https://t.me/DEV_MIX"),
+                        ". 𝗦𝗼𝘂𝗿𝗰𝗲 𝗖𝗵𝗮𝗻𝗻𝗲𝗹 .", url=f"https://t.me/W_4_M"),
                 ],
             ]
         ),
