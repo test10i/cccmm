@@ -12,7 +12,7 @@ import random
     
 
 @app.on_message(
-    command(["سورس", "ياسورس", "يا سورس", "السورس", "."])
+    command(["سورس", "ياسورس", "يا سورس", "السورس"])
     & ~filters.edited
 )
 async def khalid(client: Client, message: Message):
