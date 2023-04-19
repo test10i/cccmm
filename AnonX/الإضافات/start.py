@@ -6,6 +6,11 @@ from pyrogram.types import (InlineKeyboardButton,
                             InlineKeyboardMarkup, Message)
 from youtubesearchpython.__future__ import VideosSearch
 
+from pyrogram import *
+from pyrogram.types import *
+from pyrogram.errors import *
+
+
 import config
 from config import BANNED_USERS
 from config import OWNER_ID
@@ -30,6 +35,8 @@ from AnonX.utils.inline import (help_pannel, private_panel,
 loop = asyncio.get_running_loop()
 
 
+channel = "SpdBots"
+
 @app.on_message(
     filters.command(get_command("START_COMMAND"))
     & filters.private
@@ -37,7 +44,7 @@ loop = asyncio.get_running_loop()
     & ~BANNED_USERS
 )
 @LanguageStart
-async def start_comm(client, message: Message, _):
+async def start_comm(client:Client, message: Message, _):
     await add_served_user(message.from_user.id)
     if len(message.text.split()) > 1:
         name = message.text.split(None, 1)[1]
@@ -202,12 +209,41 @@ async def start_comm(client, message: Message, _):
         out = private_panel(_, app.username, OWNER)
         if config.START_IMG_URL:
             try:
+                try:
+                	role = await client.get_chat_member(
+                	channel,message.from_user.id)
+                	if role.status in [
+                	enums.ChatMemberStatus.BANNED,
+                	enums.ChatMemberStatus.LEFT]:
+                		return await message.reply(
+                		"◍ اشترك بقناه البوت لتتمكن من استخدامه \n✓",
+                		reply_markup=InlineKeyboardMarkup([[
+                		InlineKeyboardButton("قناة البوت",url=f"https://t.me/{channel}")]]))
+                	return await message.reply_photo(
+                    photo=config.START_IMG_URL,
+                    caption=_["start_2"].format(
+                        config.MUSIC_BOT_NAME
+                    ),
+                reply_markup=InlineKeyboardMarkup(out),
+                )
+                except:
+                	return await message.reply(
+                		"◍ اشترك بقناه البوت لتتمكن من استخدامه \n✓",
+                		reply_markup=InlineKeyboardMarkup([[
+                		InlineKeyboardButton("قناة البوت",url=f"https://t.me/{channel}")]]))
                 await message.reply_photo(
                     photo=config.START_IMG_URL,
                     caption=_["start_2"].format(
                         config.MUSIC_BOT_NAME
                     ),
-                    reply_markup=InlineKeyboardMarkup(out),
+                reply_markup=InlineKeyboardMarkup(out),
+                )
+                await message.reply_photo(
+                    photo=config.START_IMG_URL,
+                    caption=_["start_2"].format(
+                        config.MUSIC_BOT_NAME
+                    ),
+                reply_markup=InlineKeyboardMarkup(out),
                 )
             except:
                 await message.reply_text(
