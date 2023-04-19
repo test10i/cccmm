@@ -57,7 +57,7 @@ async def iddd(client, message):
     usr = await client.get_chat(message.from_user.id)
     name = usr.first_name
     photo = await app.download_media(usr.photo.big_file_id)
-    await message.reply_photo(photo,       caption=f"""🔴¦𝙽𝙰𝙼𝙴 :{message.from_user.mention}\n¦𝚄𝚂𝙴𝚁 :@{message.from_user.username}\n¦𝙸𝙳 :`{message.from_user.id}`\n¦𝙱𝙸𝙾 :{usr.bio}\n¦𝙲𝙷𝙰𝚃: {message.chat.title}\n¦𝙸𝙳.𝙶𝚁𝙾𝚄𝙿 :`{message.chat.id}`""", 
+    await message.reply_photo(photo,       caption=f"""𓏺 Name 𓏺 {message.from_user.mention}\n𓏺  User 𓏺 @{message.from_user.username}\n𓏺  iD 𓏺 `{message.from_user.id}`\𓏺  Bio 𓏺 {usr.bio}\ 𓏺 Chat 𓏺 {message.chat.title}\n 𓏺 Group 𓏺 `{message.chat.id}`""", 
     reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -80,9 +80,9 @@ async def lllock(client, message):
    get = await app.get_chat_member(message.chat.id, message.from_user.id)
    if get.status in ["creator", "administrator"]:
       if message.chat.id in iddof:
-        return await message.reply_text("جمالي معطل من قبل✅")
+        return await message.reply_text("جمالي معطل من قبل")
       iddof.append(message.chat.id)
-      return await message.reply_text(" تم تعطيل جمالي بنجاح✅🔒")
+      return await message.reply_text(" تم تعطيل جمالي بنجاح")
    else:
       return await message.reply_text("لازم تكون ادمن يشخه علشان اسمع كلامك")
 
@@ -95,11 +95,11 @@ async def idljjopen(client, message):
    get = await app.get_chat_member(message.chat.id, message.from_user.id)
    if get.status in ["creator", "administrator"]:
       if not message.chat.id in iddof:
-        return await message.reply_text("جمالي مفعل من قبل✅")
+        return await message.reply_text("جمالي مفعل من قبل")
       iddof.remove(message.chat.id)
-      return await message.reply_text("تم فتح جمالي بنجاح ✅🔓")
+      return await message.reply_text("تم فتح جمالي بنجاح")
    else:
-      return await message.reply_text("لازم تكون ادمن يشخه علشان اسمع كلامك")
+      return await message.reply_text("لازم تكون ادمن علشان اسمع كلامك")
 
 
 
@@ -117,7 +117,7 @@ async def idjjdd(client, message):
     i = ["0","10", "15","20", "25","30","35", "40","45", "50","55", "60"," 66", "70","77", "80","85", "90","99", "100","1000" ]
     ik = random.choice(i)
     photo = await app.download_media(usr.photo.big_file_id)
-    await message.reply_photo(photo,       caption=f"نسبه جمالك يا مز انت \n│ \n└ʙʏ: {ik} %😂❤️", 
+    await message.reply_photo(photo,       caption=f"نسبه جمالك يا مز انت \n│ \n - she : {ik} %😂❤️", 
     reply_markup=InlineKeyboardMarkup(
             [
                 [
