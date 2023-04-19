@@ -20,19 +20,19 @@ from random import  choice, randint
 )
 async def huhh(client: Client, message: Message):
     await message.reply_photo(
-        photo=f"https://graph.org/file/c973727bddf803e028539.jpg",
-        caption=f"""𝘛𝘏𝘌 𝘉𝘌𝘚𝘛 𝘚𝘖𝘜𝘙𝘊𝘌 𝘖𝘕 𝘛𝘌𝘓𝘌𝘎𝘙𝘈𝘔""",
+        photo=f"https://graph.org/file/7031365c0ba236dd7ef28.jpg",
+        caption=f""". 𝗪𝗲𝗹𝗰𝗼𝗺𝗲 𝘁𝗼 𝗦𝗼𝘂𝗿𝗰𝗲 𝗠𝗶𝘅 .""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "ꪑꪗ ᦔꫀꪜ", url=f"https://t.me/DEV_TOM"), 
+                        "ꪑꪗ ᦔꫀꪜ", url=f"https://t.me/P_T_I"), 
                 
                     InlineKeyboardButton(
-                        "ᧁ𝘳ꪮꪊρ ᥴ𝘳", url=f"https://t.me/SORS0Coo"),
+                        "ᧁ𝘳ꪮꪊρ ᥴ𝘳", url=f"https://t.me/C_5_N"),
                 ],[
                     InlineKeyboardButton(
-                        "⌞ 𝘾𝙍 • 𝙎𝙊𝙐𝙍𝘾𝙀 ⌝", url=f"https://t.me/pp_g3"),
+                        "⌞ 𝗦𝗼𝘂𝗿𝗰𝗲 𝗠𝗶𝘅 ⌝", url=f"https://t.me/C_5_N"),
                 ],
 
             ]
@@ -47,7 +47,7 @@ async def huhh(client: Client, message: Message):
 async def ihd(client: Client, message: Message):
     rl = random.randint(3,267)
     url = f"https://t.me/bsmaatt/{rl}"
-    await client.send_voice(message.chat.id,url,caption="🔥 ¦ تـم اختيـار الاغـنـية لـك",parse_mode="html",
+    await client.send_voice(message.chat.id,url,caption=". تـم اختيـار الاغـنـية لـك -",parse_mode="html",
     reply_markup=InlineKeyboardMarkup(
             [
                 [
