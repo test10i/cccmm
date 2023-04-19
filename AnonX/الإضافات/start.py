@@ -35,7 +35,7 @@ from AnonX.utils.inline import (help_pannel, private_panel,
 loop = asyncio.get_running_loop()
 
 
-channel = "SpdBots"
+channel = "C_5_N"
 
 @app.on_message(
     filters.command(get_command("START_COMMAND"))
