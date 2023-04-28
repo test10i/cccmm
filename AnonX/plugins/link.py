@@ -31,7 +31,7 @@ async def ahmed(client: Client, message: Message):
                         ". Dev Source .", url=f"https://t.me/P_T_I"),
                 ],[
                     InlineKeyboardButton(
-                        ". Dev Source .", url=f"https://t.me/DEV_MIX"),
+                        ". Dev Source .", url=f"https://t.me/O_3_E"),
                 ],
             ]
         ),
@@ -57,10 +57,10 @@ async def madison(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "مڪس م فايق .", url=f"https://t.me/P_T_I"),
+                        "مڪس", url=f"https://t.me/P_T_I"),
                 ],[
                     InlineKeyboardButton(
-                        "• Source Mix .", url=f"https://t.me/W_4_M"),
+                        ". 𝗰𝗛 𝗠 𝗜 𝗫 .", url=f"https://t.me/O_3_E"),
                 ],
             ]
         ),
