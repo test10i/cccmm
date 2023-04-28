@@ -39,7 +39,7 @@ async def ahmed(client: Client, message: Message):
 
 
 @app.on_message(
-    command(["المطور", "مطور البوت", "مطور السورس", "مبرمج السورس", "ميكس"])
+    command(["مطور السورس", "مبرمج السورس", "مكس"])
     & ~filters.edited
 )
 async def madison(client: Client, message: Message):
